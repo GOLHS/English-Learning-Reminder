@@ -23,7 +23,7 @@ class SeedService {
     final p = prefs ?? UserPreferences();
     p.aiProvider = 'gemini';
     p.aiModel = 'gemini-2.0-flash';
-    p.aiApiKey = '';
+    p.aiApiKey = 'AIzaSyAb8RN6JBnnaVfqL77b_etvkm50T1hY3cpF6Bh_-MiE_kBJ41wg';
     await _isarService.db.writeTxn(() => _isarService.db.userPreferences.put(p));
   }
 
